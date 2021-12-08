@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/style.css">
+<head>
+    <title>Consumir API PEELS</title>
+</head>
+<body>
+    <div class="column">
+        <label for="categoria">Selecione Categoria Fotos:</label>
+        <select id="categorias" name="categoria">
+            <option value="beach">Praias</option>
+            <option value="surf">Surfs</option>
+            <option value="space">Espaços</option>
+            <option value="animals">Animais</option>
+        </select>
+        
+        <!-- <input type="text" id="url" style="width:300px;"> -->
+        <button onclick="fazerRequisicao();">Carregar Fotos API Pexels</button>
+
+        <button id="btn_proxima_pagina" onclick="proxima_pagina();">Proxima Página</button>
+
+        <label for="paginas">Página :</label>
+        <input type="text" id="pagina" style="width:20px; text-align: center;">
+
+    </div>
+    <hr />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div id="resposta"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
